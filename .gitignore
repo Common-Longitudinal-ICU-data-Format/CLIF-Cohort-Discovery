@@ -1,0 +1,43 @@
+# ------------------------------
+# Project-Specific Files & Directories
+# ------------------------------
+.clif_cohort
+sampler/
+app_files/
+.DS_Store
+cohort.duckdb
+
+# ------------------------------
+# Log Files
+# ------------------------------
+app.log
+
+# ------------------------------
+# R Session & Data Files
+# ------------------------------
+.Rprofile
+.Rhistory
+.Ruserdata
+*.RData
+
+# ------------------------------
+# R Project Files
+# ------------------------------
+*.Rproj
+.Rproj.user
+
+# ------------------------------
+# Initialization & Configuration
+# ------------------------------
+initialize_renv.R
+
+# ------------------------------
+# OS-Specific Files
+# ------------------------------
+.DS_Store
+
+# ------------------------------
+# renv Environment (ignore all but the lock file)
+# ------------------------------
+/renv/*
+!/renv/renv.lock
