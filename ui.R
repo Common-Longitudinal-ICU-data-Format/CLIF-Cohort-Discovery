@@ -263,27 +263,27 @@ ui <- fluidPage(
                    column(4,
                           wellPanel(
                             tags$h4("Cohort Entry Events"),
-                            uiOutput("cohort_entry_ui"),
-                            actionButton("add_criteria", "+ Add Event"),
-                            actionButton("remove_criteria", "- Remove Last Event", class = "btn-warning")
+                            uiOutput("cohort_entry_ui")
+                            # actionButton("add_criteria", "+ Add Event"),
+                            # actionButton("remove_criteria", "- Remove Last Event", class = "btn-warning")
                           )
                    ),
                    
                    column(4,
                           wellPanel(
                             tags$h4("Inclusion Criteria"),
-                            uiOutput("inclusion_criteria_ui"),
-                            actionButton("add_inclusion_criteria", "+ Add Criteria"),
-                            actionButton("remove_criteria", "- Remove Last Criteria", class = "btn-warning")
+                            uiOutput("inclusion_criteria_ui")
+                            # actionButton("add_inclusion_criteria", "+ Add Criteria"),
+                            # actionButton("remove_criteria", "- Remove Last Criteria", class = "btn-warning")
                           )
                    ),
                    
                    column(4,
                           wellPanel(
                             tags$h4("Exclusion Criteria"),
-                            uiOutput("exclusion_criteria_ui"),
-                            actionButton("add_exclusion_criteria", "+ Add Criteria"),
-                            actionButton("remove_criteria", "- Remove Last Criteria", class = "btn-warning")
+                            uiOutput("exclusion_criteria_ui")
+                            # actionButton("add_exclusion_criteria", "+ Add Criteria"),
+                            # actionButton("remove_criteria", "- Remove Last Criteria", class = "btn-warning")
                           )
                    )
                  ),
