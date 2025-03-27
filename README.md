@@ -10,7 +10,7 @@ Follow these steps to run the Shiny app:
    ```sh
    renv::restore()
    ```
-   When prompted how you would like to load the project, choose **1** for the default setup.
+   When prompted how you would like to proceed with activating the project, choose **1** for the default setup.
 4. **Run the App**
    ```sh
    shiny::runApp("app.R")
