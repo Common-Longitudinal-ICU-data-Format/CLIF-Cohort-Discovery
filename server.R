@@ -565,15 +565,15 @@ server <- function(input, output, session) {
           selected_column <- input[[paste0("cohort_column_selection_", current_i)]]
           flog.info("Cohort Entry %s - Table: %s, Column: %s", current_i, selected_event, selected_column)
           if (is.null(selected_event) || selected_event == "") return("No event selected.")
-          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "- No column selected."))
+          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "| No column selected."))
           filter_id <- get_filter_input_id(selected_event, selected_column, "cohort", current_i)
           if (is.null(filter_id)) return("No event selected.")
           selected_filter <- input[[filter_id]]
           flog.info("Cohort Filter for entry %s: %s", current_i, toString(selected_filter))
           if (is.null(selected_filter) || length(selected_filter) == 0) {
-            return(paste("Event:", selected_event, "- Selected Column:", selected_column, "- No filter values selected."))
+            return(paste("Event:", selected_event, "- Selected Column:", selected_column, "| No filter values selected."))
           }
-          paste("Event:", selected_event, "- Selected Column:", selected_column, "- Filter Values:", toString(selected_filter))
+          paste("Event:", selected_event, "| Selected Column:", selected_column, "| Filter Values:", toString(selected_filter))
         })
       })
     }
@@ -602,15 +602,15 @@ server <- function(input, output, session) {
           selected_column <- input[[paste0("inclusion_column_selection_", current_i)]]
           flog.info("Inclusion Criteria %s - Table: %s, Column: %s", current_i, selected_event, selected_column)
           if (is.null(selected_event) || selected_event == "") return("No event selected.")
-          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "- No column selected."))
+          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "| No column selected."))
           filter_id <- get_filter_input_id(selected_event, selected_column, "inclusion", current_i)
           if (is.null(filter_id)) return("No event selected.")
           selected_filter <- input[[filter_id]]
           flog.info("Inclusion Filter for criteria %s: %s", current_i, toString(selected_filter))
           if (is.null(selected_filter) || length(selected_filter) == 0) {
-            return(paste("Event:", selected_event, "- Selected Column:", selected_column, "- No filter values selected."))
+            return(paste("Event:", selected_event, "- Selected Column:", selected_column, "| No filter values selected."))
           }
-          paste("Event:", selected_event, "- Selected Column:", selected_column, "- Filter Values:", toString(selected_filter))
+          paste("Event:", selected_event, "| Selected Column:", selected_column, "| Filter Values:", toString(selected_filter))
         })
       })
     }
@@ -639,15 +639,15 @@ server <- function(input, output, session) {
           selected_column <- input[[paste0("exclusion_column_selection_", current_i)]]
           flog.info("Exclusion Criteria %s - Table: %s, Column: %s", current_i, selected_event, selected_column)
           if (is.null(selected_event) || selected_event == "") return("No event selected.")
-          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "- No column selected."))
+          if (is.null(selected_column) || selected_column == "") return(paste("Event:", selected_event, "| No column selected."))
           filter_id <- get_filter_input_id(selected_event, selected_column, "exclusion", current_i)
           if (is.null(filter_id)) return("No event selected.")
           selected_filter <- input[[filter_id]]
           flog.info("Exclusion Filter for criteria %s: %s", current_i, toString(selected_filter))
           if (is.null(selected_filter) || length(selected_filter) == 0) {
-            return(paste("Event:", selected_event, "- Selected Column:", selected_column, "- No filter values selected."))
+            return(paste("Event:", selected_event, "| Selected Column:", selected_column, "| No filter values selected."))
           }
-          paste("Event:", selected_event, "- Selected Column:", selected_column, "- Filter Values:", toString(selected_filter))
+          paste("Event:", selected_event, "| Selected Column:", selected_column, "| Filter Values:", toString(selected_filter))
         })
       })
     }
